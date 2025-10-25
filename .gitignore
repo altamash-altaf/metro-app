@@ -1,0 +1,17 @@
+# Compiled class files
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.gz
+
+# IDE/OS Generated files
+# IntelliJ/Android Studio
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
