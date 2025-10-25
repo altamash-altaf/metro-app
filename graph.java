@@ -8,7 +8,6 @@ public class graph
 		HashMap<String, Integer> nbrs = new HashMap<>();
 	}
 
-	// This is kept static as it was in your original design.
 	static HashMap<String, Vertex> vtces;
 
 	public graph() 
@@ -194,7 +193,6 @@ public class graph
 		{
 			DijkstraPair np = new DijkstraPair();
 			np.vname = key;
-			//np.psf = "";
 			np.cost = Integer.MAX_VALUE;
 
 			if (key.equals(src)) 
@@ -260,7 +258,6 @@ public class graph
 	public String Get_Minimum_Distance(String src, String dst) 
 	{
 		int min = Integer.MAX_VALUE;
-		//int time = 0;
 		String ans = "";
 		HashMap<String, Boolean> processed = new HashMap<>();
 		LinkedList<Pair> stack = new LinkedList<>();
@@ -313,7 +310,6 @@ public class graph
 					np.vname = nbr;
 					np.psf = rp.psf + nbr + "  ";
 					np.min_dis = rp.min_dis + rpvtx.nbrs.get(nbr); 
-					//np.min_time = rp.min_time + 120 + 40*rpvtx.nbrs.get(nbr); 
 					stack.addFirst(np);
 				}
 			}
@@ -377,7 +373,6 @@ public class graph
 					Pair np = new Pair();
 					np.vname = nbr;
 					np.psf = rp.psf + nbr + "  ";
-					//np.min_dis = rp.min_dis + rpvtx.nbrs.get(nbr);
 					np.min_time = rp.min_time + 120 + 40*rpvtx.nbrs.get(nbr); 
 					stack.addFirst(np);
 				}
