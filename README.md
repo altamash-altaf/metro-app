@@ -1,7 +1,7 @@
 # metro-app
 A cli based java app for delhi metro map
 
---> Need atleats java 17
+--> Need atleast java 17
 
 A start :
 * Open terminal
